@@ -1,6 +1,10 @@
 Introduction
 =================
 
+==================
+Author
+==================
+
 Hello everyone!
 
 This is a simple documentation for Network Lab course of `University of Guilan`_ made by
