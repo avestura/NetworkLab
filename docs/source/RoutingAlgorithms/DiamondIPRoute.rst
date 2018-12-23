@@ -13,7 +13,7 @@ In this section, we have four PCs and four routers in the middle. The objective 
 Configuration
 ^^^^^^^^^^^^^^^^^^^
 
-.. note:: Becuase configuration of the interfaces and VPCs IPs are like the previous project,
+.. note:: Becuase configuration of the interfaces and VPCs IPs are similar to the previous project,
           I simply just write the routing codes.
 
 **R1** ::
