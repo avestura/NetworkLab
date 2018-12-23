@@ -23,3 +23,51 @@ in the image.
 ^^^^^^^^^^^^^^^^^^^
 Configuration
 ^^^^^^^^^^^^^^^^^^^
+.. note:: Becuase configuration of the interfaces and VPCs IPs are similar to the previous projects,
+          I simply just write the routing codes.
+
+**R1** ::
+
+    R1(config)#router ospf 1
+    R1(config-router)#network 12.12.12.0 255.255.255.0 area 0
+    R1(config-router)#network 13.13.13.0 255.255.255.0 area 0
+    R1(config-router)#network 14.14.14.0 255.255.255.0 area 0
+
+**R2** ::
+
+    R2(config)#router ospf 2
+    R2(config-router)#network 12.12.12.0 255.255.255.0 area 0
+    R2(config-router)#network 25.25.25.0 255.255.255.0 area 0
+    R2(config-router)#network 26.26.26.0 255.255.255.0 area 0
+
+**R3** ::
+
+    R3(config)#router ospf 3
+    R3(config-router)#network 13.13.13.0 255.255.255.0 area 0
+    R3(config-router)#network 35.35.35.0 255.255.255.0 area 1235
+
+**R4** ::
+
+    R4(config)#router ospf 4
+    R4(config-router)#network 14.14.14.0 255.255.255.0 area 0
+
+**R5** ::
+
+    R5(config)#router ospf 5
+    R5(config-router)#network 25.25.25.0 255.255.255.0 area 0
+    R5(config-router)#network 35.35.35.0 255.255.255.0 area 1235
+
+**R6** ::
+
+    R6(config)#router ospf 6
+    R6(config-router)#network 26.26.26.0 255.255.255.0 area 0
+    R6(config-router)#network 67.67.67.0 255.255.255.0 area 26
+
+**R7** ::
+
+    R7(config)#router ospf 7
+    R7(config-router)#network 67.67.67.0 255.255.255.0 area 26
+
+
+**View Connection details**
+Use ``sh ip route`` and ``sh ip protocol`` to see the routes and connection details.
