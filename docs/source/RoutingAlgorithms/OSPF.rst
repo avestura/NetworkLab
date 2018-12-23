@@ -26,6 +26,10 @@ Configuration
 .. note:: Becuase configuration of the interfaces and VPCs IPs are similar to the previous projects,
           I simply just write the routing codes.
 
+-------------------------
+Routers config
+-------------------------
+
 **R1** ::
 
     R1(config)#router ospf 1
@@ -68,6 +72,8 @@ Configuration
     R7(config)#router ospf 7
     R7(config-router)#network 67.67.67.0 255.255.255.0 area 26
 
+-------------------------
+View Connection details
+-------------------------
 
-**View Connection details**
 Use ``sh ip route`` and ``sh ip protocol`` to see the routes and connection details.
