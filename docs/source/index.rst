@@ -23,6 +23,9 @@ Welcome to Network Lab's documentation!
 
     RoutingAlgorithms/SimpleIPRoute.rst
     RoutingAlgorithms/DiamondIPRoute.rst
+    RoutingAlgorithms/OSPF.rst
+    RoutingAlgorithms/EIGRP.rst
+    RoutingAlgorithms/BGP.rst
 
 .. toctree::
     :maxdepth: 2
@@ -34,7 +37,7 @@ Welcome to Network Lab's documentation!
     :maxdepth: 2
     :caption: DHCP
 
-    DHCP/index
+    DHCP/CentralDHCPServer.rst
 
 
 
