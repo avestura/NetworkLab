@@ -28,7 +28,7 @@ Welcome to Network Lab's documentation!
     :maxdepth: 2
     :caption: Security
 
-    Security/index
+    Security/IPSecOverGRE.rst
 
 .. toctree::
     :maxdepth: 2
