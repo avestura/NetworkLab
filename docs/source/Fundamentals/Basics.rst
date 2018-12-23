@@ -77,6 +77,31 @@ Notice that the ``exit`` command only changes the mode one level upper and does 
 .. warning:: Interfaces of the same router can not be in the same network.
              For example you can not have two interfaces in a router with IPs ``192.168.1.1/24`` and ``192.168.1.2/24``.
 
+
+^^^^^^^^^^^^^^^^^^^^^^^^
+Show interface configs
+^^^^^^^^^^^^^^^^^^^^^^^^
+You can see the IP and status of the interfaces with ``show ip interface brief`` in Normal mode.
+The shortened version ``sh ip int br`` also works. ::
+
+    R1#show ip interface brief
+
+    Interface                  IP-Address      OK? Method Status                Protocol
+    FastEthernet0/0            192.168.1.1     YES manual up                    up
+    GigabitEthernet1/0         192.168.2.1     YES manual up                    up
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Add item to route table
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+A router must know on which interface it should to forward a packet, based on the network address of it.
+You can manually add items to the routing table of a router using ``ip route x.x.x.x y.y.y.y <interface_id>`` command
+where the *x.x.x.x* is the network address and *y.y.y.y* is the subnet mask. ::
+
+    R1(config)#ip route 192.168.1.0 255.255.255.0 fa0/0
+
+The example above simply forwards every packet with destination of ``192.168.1.x`` to its ``FastEthernet0/0`` port.
+
 **************
 VPCs
 **************
