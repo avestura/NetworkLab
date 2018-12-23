@@ -13,7 +13,7 @@ This is a simple documentation for Network Lab course of `University of Guilan`_
 Contributions
 ==================
 
-Contributions are very welcome. You can simply use that **Edit in GitHub**
+Contributions are very welcome. You can simply use that **Edit on GitHub**
 link on top of each page to improve these pages.
 
 You may need `Sphinx`_ docs if you are not familiar with reStucturedText.
