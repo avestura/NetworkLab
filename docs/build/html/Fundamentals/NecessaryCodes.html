@@ -1,0 +1,368 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Necessary Codes &mdash; Network Lab  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Routing Algorithms" href="../RoutingAlgorithms/index.html" />
+    <link rel="prev" title="Introduction" href="../About/index.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Network Lab
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Network Lab</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../About/index.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Fundamentals</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Necessary Codes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#routers">Routers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#config-mode">Config Mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ping">Ping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#save-or-show-configs">Save or Show configs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#config-interfaces">Config interfaces</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#vpcs">VPCs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#short-codes">Short Codes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Routing Algorithms</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../RoutingAlgorithms/index.html">Routing Algorithms</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Security</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Security/index.html">Security</a></li>
+</ul>
+<p class="caption"><span class="caption-text">DHCP</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../DHCP/index.html">DHCP</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Network Lab</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Necessary Codes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/0xaryan/NetworkLab/blob/master/source/Fundamentals/NecessaryCodes.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="necessary-codes">
+<h1>Necessary Codes<a class="headerlink" href="#necessary-codes" title="Permalink to this headline">¶</a></h1>
+<p>These are snippets and codes we use a lot in our projects</p>
+<div class="section" id="routers">
+<h2>Routers<a class="headerlink" href="#routers" title="Permalink to this headline">¶</a></h2>
+<p>Codes frequently used for routers</p>
+<div class="section" id="config-mode">
+<h3>Config Mode<a class="headerlink" href="#config-mode" title="Permalink to this headline">¶</a></h3>
+<p>There are multiple modes in routers, including <strong>Normal Mode</strong> and <strong>Config Mode</strong>.</p>
+<p>You can switch to config mode with <code class="docutils literal notranslate"><span class="pre">config</span> <span class="pre">terminal</span></code> or simply <code class="docutils literal notranslate"><span class="pre">conf</span> <span class="pre">t</span></code> command and get back to normal mode with <code class="docutils literal notranslate"><span class="pre">exit</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">R1</span><span class="c1">#</span>
+<span class="n">R1</span><span class="c1"># conf t</span>
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#</span>
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1"># exit</span>
+<span class="n">R1</span><span class="c1">#</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Pay attention what mode you are in.</p>
+</div>
+</div>
+<div class="section" id="ping">
+<h3>Ping<a class="headerlink" href="#ping" title="Permalink to this headline">¶</a></h3>
+<p>You can simply ping a destination with <code class="docutils literal notranslate"><span class="pre">ping</span></code> command in <strong>Normal Mode</strong>.
+If you are in <strong>Config</strong> mode, use <code class="docutils literal notranslate"><span class="pre">do</span> <span class="pre">ping</span></code> command.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="35%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Mode</th>
+<th class="head">Command</th>
+<th class="head">Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Normal</td>
+<td>ping x.x.x.x</td>
+<td><code class="docutils literal notranslate"><span class="pre">ping</span> <span class="pre">192.168.1.23</span></code></td>
+</tr>
+<tr class="row-odd"><td>Config</td>
+<td>do ping x.x.x.x</td>
+<td><code class="docutils literal notranslate"><span class="pre">do</span> <span class="pre">ping</span> <span class="pre">192.168.1.23</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="save-or-show-configs">
+<h3>Save or Show configs<a class="headerlink" href="#save-or-show-configs" title="Permalink to this headline">¶</a></h3>
+<p>If you are in <strong>Normal</strong> mode, simply type <code class="docutils literal notranslate"><span class="pre">show</span> <span class="pre">running-config</span></code> to show the current config, and
+<code class="docutils literal notranslate"><span class="pre">save</span> <span class="pre">running-config</span> <span class="pre">startup-config</span></code> to save the commands for next start.</p>
+<p>If you are in <strong>Config</strong> mode, put a <code class="docutils literal notranslate"><span class="pre">do</span></code> prefix before those commands:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">R1</span><span class="c1"># ping 192.168.1.1</span>
+<span class="n">R1</span><span class="c1"># show running-config</span>
+<span class="n">R1</span><span class="c1"># save running-config startup-config</span>
+
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1"># do ping 192.168.1.1</span>
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1"># do show running-config</span>
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1"># do save running-config startup-config</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="config-interfaces">
+<h3>Config interfaces<a class="headerlink" href="#config-interfaces" title="Permalink to this headline">¶</a></h3>
+<p>You can config interfaces of the router in <em>config mode</em>. You may have multiple interfaces on your router such as
+<strong>FastEthernet</strong> or <strong>GigabitEthernet</strong>, etc.
+Simply use <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">&lt;interface_id&gt;</span></code> to config the interface. The <em>interface_id</em> parameter should be in any forms of the
+interface type, for example all of these are accepted: <code class="docutils literal notranslate"><span class="pre">FastEthernet0/0</span></code>, <code class="docutils literal notranslate"><span class="pre">fa0/0</span></code> or <code class="docutils literal notranslate"><span class="pre">f0/0</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">R1</span><span class="c1">#conf t</span>
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#int fa0/0</span>
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="k">if</span><span class="p">)</span><span class="c1">#ip addr 192.198.1.1 255.255.255.0</span>
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="k">if</span><span class="p">)</span><span class="c1">#no shut</span>
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="k">if</span><span class="p">)</span><span class="c1">#exit</span>
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#</span>
+</pre></div>
+</div>
+<p>Here we first switched to <em>interface config mode</em> with <code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">fa0/0</span></code> command and then changed
+the IP address and subnet mask of the interface.
+The <code class="docutils literal notranslate"><span class="pre">shutdown</span></code> command disables the interface. Putting a <em>no</em> (<code class="docutils literal notranslate"><span class="pre">no</span> <span class="pre">shutdown</span></code> or simply <code class="docutils literal notranslate"><span class="pre">no</span> <span class="pre">shut</span></code>)
+before this command (re)enables the interface.</p>
+<p>Notice that the <code class="docutils literal notranslate"><span class="pre">exit</span></code> command only changes the mode one level upper and does not directly switch to the <em>Normal mode</em>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Interfaces of the same router can not be in the same network.
+For example you can not have two interfaces in a router with IPs <code class="docutils literal notranslate"><span class="pre">192.168.1.1/24</span></code> and <code class="docutils literal notranslate"><span class="pre">192.168.1.2/24</span></code>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="vpcs">
+<h2>VPCs<a class="headerlink" href="#vpcs" title="Permalink to this headline">¶</a></h2>
+<p>Codes frequently used for VPCs</p>
+<div class="section" id="short-codes">
+<h3>Short Codes<a class="headerlink" href="#short-codes" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="35%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Command</th>
+<th class="head">Description</th>
+<th class="head">Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>ping x.x.x.x</td>
+<td>Pings an IP address</td>
+<td><code class="docutils literal notranslate"><span class="pre">ping</span> <span class="pre">192.168.1.23</span></code></td>
+</tr>
+<tr class="row-odd"><td>save</td>
+<td>Saves the configs of the VPC</td>
+<td><code class="docutils literal notranslate"><span class="pre">save</span></code></td>
+</tr>
+<tr class="row-even"><td>ip x.x.x.x/y z.z.z.z</td>
+<td>Sets IP, Subnet mask and Gateway</td>
+<td><code class="docutils literal notranslate"><span class="pre">ip</span> <span class="pre">192.168.1.2/24</span> <span class="pre">192.168.1.1</span></code></td>
+</tr>
+<tr class="row-odd"><td>ip dhcp</td>
+<td>Gets the IP from DHCP server</td>
+<td><code class="docutils literal notranslate"><span class="pre">ip</span> <span class="pre">dhcp</span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../RoutingAlgorithms/index.html" class="btn btn-neutral float-right" title="Routing Algorithms" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../About/index.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, 0xaryan
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
