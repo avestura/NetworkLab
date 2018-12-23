@@ -21,7 +21,7 @@ You can switch to config mode with ``config terminal`` or simply ``conf t`` comm
     R1(config)# exit
     R1#
 
-.. note:: Pay attention what mode you are in.
+.. note:: Pay attention to what mode you are in.
 
 ^^^^^^^^^^^^^^
 Ping
