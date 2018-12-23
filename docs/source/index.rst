@@ -21,7 +21,8 @@ Welcome to Network Lab's documentation!
     :maxdepth: 2
     :caption: Routing Algorithms
 
-    RoutingAlgorithms/index
+    RoutingAlgorithms/SimpleIPRoute.rst
+    RoutingAlgorithms/DiamondIPRoute.rst
 
 .. toctree::
     :maxdepth: 2
