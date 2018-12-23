@@ -1,4 +1,4 @@
-Necessary Codes
+Basics
 ==================
 
 These are snippets and codes we use a lot in our projects

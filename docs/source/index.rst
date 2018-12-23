@@ -15,7 +15,7 @@ Welcome to Network Lab's documentation!
     :maxdepth: 2
     :caption: Fundamentals
 
-    Fundamentals/NecessaryCodes
+    Fundamentals/Basics
 
 .. toctree::
     :maxdepth: 2
