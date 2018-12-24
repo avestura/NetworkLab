@@ -12,7 +12,7 @@ Internet Protocol Security (IPsec) is a secure network protocol suite that authe
 ^^^^^^^^^^^^^^^^^^^
 Project description
 ^^^^^^^^^^^^^^^^^^^
-.. image:: /_static/Images/IPSec/IPSEC.png
+.. image:: /_static/Images/IPSEC/IPSEC.png
     :align: center
 
 Here in the image, the green tunnel is the GRE tunnel which is secured by IPSEC protocol.
