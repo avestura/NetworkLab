@@ -40,17 +40,17 @@ Config                       do ping x.x.x.x                    ``do ping 192.16
 Save or Show configs
 ^^^^^^^^^^^^^^^^^^^^^
 If you are in **Normal** mode, simply type ``show running-config`` to show the current config, and
-``save running-config startup-config`` to save the commands for next start.
+``copy running-config startup-config`` to save the configs for next start.
 
 If you are in **Config** mode, put a ``do`` prefix before those commands::
 
     R1# ping 192.168.1.1
     R1# show running-config
-    R1# save running-config startup-config
+    R1# copy running-config startup-config
 
     R1(config)# do ping 192.168.1.1
     R1(config)# do show running-config
-    R1(config)# do save running-config startup-config
+    R1(config)# do copy running-config startup-config
 
 ^^^^^^^^^^^^^^^^^
 Config interfaces
