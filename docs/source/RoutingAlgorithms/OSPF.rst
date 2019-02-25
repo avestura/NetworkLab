@@ -25,6 +25,9 @@ Configuration
 ^^^^^^^^^^^^^^^^^^^
 .. note:: Becuase configuration of the interfaces and VPCs IPs are similar to the previous projects,
           I simply just write the routing codes.
+          
+.. warning:: The area number of the backbone area should be lower than others,
+             it won't work otherwise. In this project it is area 0.
 
 -------------------------
 Routers config
