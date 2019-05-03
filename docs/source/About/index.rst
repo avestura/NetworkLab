@@ -15,7 +15,7 @@ This is a simple documentation for Network Lab course of `University of Guilan`_
             2. Driving people crazy
 
 .. _University of Guilan: https://guilan.ac.ir
-.. _Aryan Ebrahimpour: https://0xaryan.github.io/cv
+.. _Aryan Ebrahimpour: https://0xaryan.github.io
 
 ==================
 Contributions
