@@ -20,8 +20,8 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = u'Network Lab'
-copyright = u'2018, 0xaryan'
-author = u'0xaryan'
+copyright = u'2018, avestura'
+author = u'avestura'
 
 # The short X.Y version
 version = u''
@@ -130,7 +130,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'NetworkLab.tex', u'Network Lab Documentation',
-     u'0xaryan', 'manual'),
+     u'avestura', 'manual'),
 ]
 
 
@@ -181,7 +181,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 html_context = {
     "display_github": True, # Integrate GitHub
-    "github_user": "0xaryan", # Username
+    "github_user": "avestura", # Username
     "github_repo": "NetworkLab", # Repo name
     "github_version": "master", # Version
     "conf_py_path": "/source/", # Path in the checkout to the docs root
